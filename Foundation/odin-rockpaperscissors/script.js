@@ -47,13 +47,11 @@ function game() {
     // If playRound returns true add 1 to playerWins, else add 1 to computerWins
     if (playRound(playerChoice, getComputerChoice())) {
       playerWins = playerWins + 1;
-      console.log("PlayerWins: " + playerWins)
-      console.log("ComputerWins: " + computerWins)
     } else {
       computerWins = computerWins + 1;
-      console.log("PlayerWins: " + playerWins)
-      console.log("ComputerWins: " + computerWins)
     }
+    console.log("PlayerWins: " + playerWins)
+    console.log("ComputerWins: " + computerWins)
   }
 
   if (playerWins === 5) {
